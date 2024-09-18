@@ -1,7 +1,12 @@
 name: prueba1       #Debe llevar un nombre
 
-on: [push]         #Evento que se dispara al hacer push al repositorio
-
+on:          #Evento que se dispara al hacer una acción al repositorio
+  push:
+    branches: 
+      - main   #Rama a la que se hace push
+  pull_request:
+    branches:
+      - main
 jobs:               #Trabajos a ejecutar
   hola:            #Nombre representativo
     runs-on: ubuntu-latest    #Sistema operativo en donde se realiza el job
