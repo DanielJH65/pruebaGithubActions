@@ -13,4 +13,4 @@ jobs:               #Trabajos a ejecutar
     runs-on: ubuntu-latest
     steps:
       - name: LS
-        run: ls -a
+        run: ls -al
