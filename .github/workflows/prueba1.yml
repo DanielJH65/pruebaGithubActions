@@ -1,0 +1,10 @@
+name: prueba1       #Debe llevar un nombre
+
+on: [push]         #Evento que se dispara al hacer push al repositorio
+
+jobs:               #Trabajos a ejecutar
+  hola:            #Nombre representativo
+    runs-on: ubuntu-latest    #Sistema operativo en donde se realiza el job
+    steps:                    #Acciones pequeñas a realizar
+      - name: Hola Mundo      #Nombre de la acción
+        run: echo "Hola mundo"                #Permite ejecutar un comando

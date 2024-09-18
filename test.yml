@@ -1,0 +1,30 @@
+key: value    #Los valores string no se deben poner entre comillas
+
+person:                   #La separación deben de ser de 2 espacios
+  id: 1
+  name: John Doe
+  age: 30
+  address: New York
+  phoneNumbers:
+    - 555-1234
+    - 555-5678
+  active: true
+  firstName: John
+  lastName: Doe
+
+script: |                 #Se usa > o | para definir strings multi linea
+  echo "Hello, World!"
+  echo "This is a multi-line string"
+
+list:                    #Listas
+  - 1
+  - 2
+  - 3
+  - item1
+  - item2
+  - item3
+
+list2:
+  - item1: value1
+  - item2: value2
+  - item3: value3
