@@ -8,6 +8,12 @@ jobs:               #Trabajos a ejecutar
     steps:                    #Acciones pequeñas a realizar
       - name: Hola Mundo      #Nombre de la acción
         run: echo "Hola mundo"                #Permite ejecutar un comando
+      - name: touch
+        run: touch prueba.txt
+      - name: Set Text
+        run: echo "Hola Mundo" >> prueba.txt
+      - name: Read file
+        run: cat prueba.txt
 
   second:
     runs-on: ubuntu-latest
