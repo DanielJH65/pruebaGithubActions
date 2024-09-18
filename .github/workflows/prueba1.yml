@@ -17,6 +17,7 @@ jobs:               #Trabajos a ejecutar
 
   second:
     runs-on: ubuntu-latest
+    needs: [hola]         #Se utiliza para indicar que debe esperar a que otro job termine
     steps:
       - name: LS
         run: ls -al
