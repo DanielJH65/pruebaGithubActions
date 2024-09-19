@@ -1,14 +1,14 @@
 name: "My Action"
 description: "Test my action"
 
-runs:
-  using: "composite"
-
-  inputs:
+inputs:
     message:
       description: "The message to print"
       required: true
       default: "Hola"
+
+runs:
+  using: "composite"
 
   steps: 
     - name: Hola mundo
