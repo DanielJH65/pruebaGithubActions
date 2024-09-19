@@ -1,0 +1,22 @@
+name: Ejemplo Variables de entorno
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+
+    env:
+      MY_VAR_JOB: Prueba variable de entorno a nivel de Job
+
+    steps:
+      - name: Test
+        env:
+          MY_VAR_STEP: Prueba variable nivel de step
+        run: |
+          echo "Valor: $MY_VAR_JOB"
+          echo "Valor2: $MY_VAR_STEP"
+          echo "Valor3: ${{ vars.MY_VAR_REPO }}"
